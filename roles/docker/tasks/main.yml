@@ -58,7 +58,6 @@
   service:
     name: docker
     state: started
-  when: docker_task_result is not changed
 
 - name: flush handlers so we can wait for docker to come up
   meta: flush_handlers
